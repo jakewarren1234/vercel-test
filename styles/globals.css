@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+
+@font-face {
+  font-family: "Chapaza";
+  src: url("/fonts/Chapaza.ttf");
+}
+
+@font-face {
+  font-family: "Stealdream";
+  src: url("/fonts/Stealdream.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text-primary {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.text-primary-bold {
+  font-family: 'Montserrat', sans-serif;
+
+  font-weight: 700;
+}
+
+.text-chapaza {
+  font-family: "Chapaza", sans-serif;
+}
+
+.text-stealdream {
+  font-family: "Stealdream", sans-serif;
+}
+
+.bg-teal {
+  background-color: #75FFFF;
+}
+
+.text-teal {
+  color: #75FFFF;
+}
+
+.border-b-6 {
+  border-bottom-width: 6px;
+}
+
+.white-stroke {
+  -webkit-text-stroke: 1px white;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+  border-radius: 50px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  background: white;
+  border-radius: 50px;
+
+}
+
+input[type=range]::-webkit-slider-thumb {
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -20px;
+  height: 50px;
+  width: 50px;
+  background-image: url("../public/img/ring.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  margin-top: -25px;
+  height: 60px;
+  width: 60px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: white;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  background: white;
+  border-radius: 50px;
+}
+input[type=range]::-moz-range-thumb {
+  cursor: pointer;
+  margin-top: -18px;
+  height: 50px;
+  width: 50px;
+  background-image: url("../public/img/ring.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: white;
+}
+input[type=range]::-ms-fill-upper {
+  background: white;
+}
+input[type=range]::-ms-thumb {
+  cursor: pointer;
+  margin-top: -18px;
+  height: 50px;
+  width: 50px;
+  background-image: url("../public/img/ring.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: white;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: white;
+}
